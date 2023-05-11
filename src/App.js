@@ -16,8 +16,7 @@ import Price from './components/Price';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
- 
-  return (
+   return (
     <>
   <Header/>
   <Pre/>
@@ -27,16 +26,13 @@ function App() {
   <Services/>
   <MunkaRuha/>
   <Referenciak/>
- 
-  <Ipari/>
+   <Ipari/>
   <About/>
   <Job/>
   <Price/>
- 
-   <Contact/>
+    <Contact/>
    <Footer/>
   </>
   );
 }
-
 export default App;

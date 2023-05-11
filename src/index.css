@@ -14,6 +14,11 @@
 img {
   max-width: 100%;
 }
+.flex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .button {
   background-color: red;
   font-size: 1.2rem;
@@ -318,7 +323,6 @@ li {
   flex-direction: column;
   gap: 2rem;
 }
-
 .uzemi {
   display: flex;
   gap: 2rem;
@@ -463,9 +467,11 @@ textarea {
 .footerlinks a {
   color: white;
 }
-.kapcsolat {
+#kapcsolat {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 .menu {
@@ -482,9 +488,6 @@ textarea {
   justify-content: space-evenly;
   gap: 3rem;
   align-items: center;
-}
-.top {
-  display: none;
 }
 /*
 media query
@@ -547,7 +550,6 @@ media query
   .footers {
     flex-direction: column;
   }
-
   .pdbottom {
     margin-bottom: 2.5rem;
   }
@@ -569,9 +571,12 @@ media query
   .open {
     display: flex;
   }
-
   .intro:first-child {
     padding-top: 4rem;
+  }
+  .map,
+  #yt {
+    max-width: 420px;
   }
 }
 @media (max-width: 650px) {

@@ -52,5 +52,4 @@ function Ipari() {
     </>
   );
 }
-
 export default Ipari;
