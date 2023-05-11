@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/clonemosoda/static/css/main.9a3bfeb3.css",
-    "main.js": "/clonemosoda/static/js/main.484976e0.js",
+    "main.css": "/clonemosoda/static/css/main.fb429a42.css",
+    "main.js": "/clonemosoda/static/js/main.c02a611e.js",
     "static/js/787.16a26186.chunk.js": "/clonemosoda/static/js/787.16a26186.chunk.js",
-    "static/media/laundryelso.jpg": "/clonemosoda/static/media/laundryelso.a1aedfa4aa72ff0e258e.jpg",
+    "static/media/laundryelso.jpg": "/clonemosoda/static/media/laundryelso.b1b7254ce79f3d228232.jpg",
     "static/media/footer2.jpg": "/clonemosoda/static/media/footer2.ff67eeb268bd4fd68c9c.jpg",
     "static/media/towel2.jpg": "/clonemosoda/static/media/towel2.7a3335274350a5541e89.jpg",
     "static/media/ipari.jpg": "/clonemosoda/static/media/ipari.f3a427a6ba414626025f.jpg",
@@ -24,12 +24,12 @@
     "static/media/ref6.png": "/clonemosoda/static/media/ref6.4cea6116032eb204cf1e.png",
     "static/media/logo.svg": "/clonemosoda/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/clonemosoda/index.html",
-    "main.9a3bfeb3.css.map": "/clonemosoda/static/css/main.9a3bfeb3.css.map",
-    "main.484976e0.js.map": "/clonemosoda/static/js/main.484976e0.js.map",
+    "main.fb429a42.css.map": "/clonemosoda/static/css/main.fb429a42.css.map",
+    "main.c02a611e.js.map": "/clonemosoda/static/js/main.c02a611e.js.map",
     "787.16a26186.chunk.js.map": "/clonemosoda/static/js/787.16a26186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a3bfeb3.css",
-    "static/js/main.484976e0.js"
+    "static/css/main.fb429a42.css",
+    "static/js/main.c02a611e.js"
   ]
 }
