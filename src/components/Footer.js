@@ -16,7 +16,10 @@ function Footer() {
             <div className="footerflex">
               <span> Kövess minket:</span>
               <a href="https://www.facebook.com/gyemantmosoda/" target="_blank">
-                <img src={require("../assets/facebook.png")} alt="Gyémántmosoda logo" />
+                <img
+                  src={require("../assets/facebook.png")}
+                  alt="Gyémántmosoda logo"
+                />
               </a>
             </div>
           </div>
@@ -65,8 +68,6 @@ function Footer() {
         <hr width="100%" size="1" color="white" />
         <div id="copy">
           <p>2023 &copy; Majoros Péter </p>
-
-        
         </div>
       </div>
     </div>
