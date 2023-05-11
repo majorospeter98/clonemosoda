@@ -1,13 +1,588 @@
-body {
+:root {
+  --main-color: #3e73be;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  line-height: 1.6;
+}
+.gap {
+margin-top:3.5rem;
+}
+img{
+  max-width:100%;
+}
+.button{
+  background-color:red;
+  font-size:1.2rem;
+  color:white;
+  border:none;
+  height:50px;
+  width:160px;
+  text-align: center;
+  
+}
+.button a{
+  color:white;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.text{
+font-size:2.7rem;
+  text-align: center;
+ 
+  
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width:80%;
+}
+.pdtop{
+ padding-top:2.6rem;
+}
+.pd{
+padding-bottom:2rem;
+}
+.header {
+  min-height: 7rem;
+ display:flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.navbar{
+  display:flex;
+}
+.navbar ul{
+  display: flex;
+  }
+.navbar li a {
+  color: black;
+  display: block;
+  padding: 1rem;
+}
+.navbar li a:hover {
+  border-bottom: 2px var(--main-color) solid;
+}
+#pre {
+  min-height: 40rem;
+  background-image: url("assets/laundryelso.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+  z-index: 10;
+}
+.intro {
+  min-height: 40rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+color:white;
+ 
+}
+.intro h1 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgb(73, 72, 72);
+  mix-blend-mode: multiply;
+  color:white;
+  z-index:-2;
+
+}
+.covid {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.covid img {
+  width: 450px;
+}
+.covid p {
+  text-align: justify;
+  max-width: 600px;
+}
+.covidtext {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#jellemzok {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.jellemzotext img {
+  height: 60px;
+}
+.jellemzotext {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.partner {
+  min-height: 20rem;
+  background: url("assets//towel2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  isolation: isolate;
+  z-index: 2;
+}
+.partnerintro {
+  position: relative;
+  min-height: 20rem;
+  width: 100%;
+  color: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.partnerintro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgb(88, 88, 88);
+  mix-blend-mode: screen;
+}
+.services {
+  min-height: 20rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.service {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.service p{}
+#munkaruha {
+  margin-top: 8rem;
+  min-height: 35rem;
+  background-image: url("assets/munkaruha.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  isolation: isolate;
+  z-index: 90;
+}
+.munkaruhasecond img {
+  height: 150px;
+  width: 150px;
+}
+.munkaruhaintro {
+  min-height: 35rem;
+  position: relative;
+  color: white;
+}
+.munkaruhak {
+  min-height: 35rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.munkaruhaintro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--main-color);
+  mix-blend-mode: multiply;
+  z-index: -2;
+}
+.munkaruhafirst {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.munkaruhasecond {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.kep1 {
+  display: flex;
+  gap: 2rem;
+}
+.refs {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+.referenciak {
+  position: relative;
+  width: 380px;
+}
+.refimg {
+  display: block;
+  width: 100%;
+}
+.titlep {
+  font-size: 1.4rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s;
+  gap: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay > * {
+  transform: translateY(100px);
+  transition: transform 0.25s;
+}
+.overlay:hover > * {
+  transform: translateY(0px);
+}
+#ipari {
+  margin-top: 7rem;
+  min-height: 40rem;
+  background-image: url("assets/ipari.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  isolation: isolate;
+}
+#iparikepek {
+  min-height: 40rem;
+  position: relative;
+  width: 100%;
+  color: red;
+}
+#iparikepek::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(138, 138, 138);
+  z-index: -23;
+  mix-blend-mode: screen;
+}
+.iparikepek {
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#rolunk p {
+  max-width: 600px;
+}
+.abouts {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  text-align: justify;
+}
+.mosoda {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.uzemi {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.uzemi li {
+  list-style-type: square;
+}
+.column {
+  column-count: 2;
+  column-span: var(--main-color);
+}
+.kepek img {
+  padding-top: 1rem;
+  border: 2px red solid;
+  border-radius: 2rem;
+}
+#job {
+  margin-top: 10rem;
+  min-height: 15rem;
+  background-image: url("assets/job.jpg");
+  background-position: center center;
+  z-index: 9999;
+  isolation: isolate;
+}
+.jobintro {
+  min-height: 15rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jobintro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(161, 149, 149);
+  mix-blend-mode: screen;
+  z-index: -20;
+}
+#arajanlat {
+  margin-top: 5rem;
+}
+.prices {
+  min-height: 45rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.priceimg {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+#arajanlat form {
+  min-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: center;
+  background-color: rgb(191, 224, 235);
+  width: 400px;
+  border: 1px transparent solid;
+  border-radius: 3rem;
+}
+#arajanlat form input{
+  width: 80%;
+  height: 1.8rem;
+}
+#arajanlat textarea{
+  width: 80%!important;
+  height:4.8rem;
+}
+input,textarea {
+  padding-left: 1rem;
+}
+:disabled{
+     background-color: rgb(150, 148, 148);
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: line-through;
+    font-size: 1.1rem;
+    }
+.footerpre p{
+  max-width:420px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.map{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer {
+  margin-top: 10rem;
+  min-height: 30rem;
+  background-image: url("assets/footer2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
+  position: relative;
+  color: white;
+}
+#footer h2{
+  margin:40px 0;
+}
+.footers {
+  position: relative;
+  min-height: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+.footerflex{
+  display:flex;
+  margin-top:1rem;
+  align-items: center;
+  gap:1.5rem;
+}
+.teszt img {
+  width: 40px;
+  height: 40px;
+}
+.teszt::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(88, 83, 83);
+  mix-blend-mode: multiply;
+  z-index: -100;
+}
+.footerlinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footerlinks a {
+  color: white;
+}
+.kapcsolat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.menu {
+  display:none;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+
+}
+.black {
+  font-weight: bold;
+}
+
+#copy {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  align-items: center;
+}
+.top {
+  display: none;
+}
+/*
+media query
+*/
+@media (min-width:824px){
+ 
+}
+@media (max-width:1024px){
+.header{
+  flex-direction: column;
+  gap:3rem;
+}
+nav{
+  width:90%;
+}
+.navbar{
+  flex-direction: column;
+}
+nav a{
+  width:100%;
+    background-color: var(--main-color);
+outline:none;
+  text-align: center;
+  color:white;
+}
+
+.navbar ul{
+  display:none;
+}
+.navbar:first-child{
+  margin-top:4rem;
+}
+.menu {
+  position:absolute;
+  top:20px;
+  right:5px;
+  display:flex;
+}
+.covid{
+  flex-direction: column;
+  }
+#jellemzok{
+  flex-direction: column;
+}
+.services{
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.service{
+  flex-direction: column;
+}
+.grids{
+grid-template-columns: 1fr;
+justify-content: center;
+align-items: center;
+justify-items: center;
+}
+.munkaruhak, .iparikepek,.abouts,.prices,.footers {
+  flex-direction: column;
+}
+
+.pdbottom{
+  margin-bottom:2.5rem;
+}
+.reviews{
+  flex-direction: column;
+  align-items: center;
+}
+.contacts{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact{
+  gap:2rem;
+}
+.intro{
+  flex-direction: column;
+}
+.open{
+ display:flex;
+}
+
+.intro:first-child  {
+  padding-top:4rem;
+}
+}
+@media (max-width:650px){
+.map,#yt{
+  max-width:320px;
+}
 }
