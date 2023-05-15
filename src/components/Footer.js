@@ -1,5 +1,6 @@
 function Footer() {
   return (
+    <footer>
     <div id="footer">
       <div className="teszt">
         <div className="footers">
@@ -71,6 +72,7 @@ function Footer() {
         </div>
       </div>
     </div>
+    </footer>
   );
 }
 export default Footer;

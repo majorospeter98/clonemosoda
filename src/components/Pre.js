@@ -1,10 +1,10 @@
 function Pre(){
     return (
-        <div id="pre">
+        <section id="pre">
 <div className="intro">
     <h1>Gyémántmosoda</h1>
 </div>
-</div>
+</section>
     )
 }
 export default Pre;

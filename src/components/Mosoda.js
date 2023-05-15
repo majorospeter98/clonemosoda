@@ -1,7 +1,7 @@
 function Mosoda() {
   return (
     <>
-      <div id="mosoda">
+      <section id="mosoda">
         <div className="container">
           <h1 className="text gap">COVID-19</h1>
           <div className="covid">
@@ -29,7 +29,7 @@ function Mosoda() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

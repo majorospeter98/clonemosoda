@@ -1,7 +1,7 @@
 function Ipari() {
   return (
     <>
-      <div id="ipari">
+      <section id="ipari">
         <div id="iparikepek">
           <div>
             <h1 className="pdtop gap text">IPARI TISZTÍTÁS 6 LÉPÉSBEN</h1>
@@ -48,7 +48,7 @@ function Ipari() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

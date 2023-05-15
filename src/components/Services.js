@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <>
+    <section>
       <div className="container">
         <div id="services">
           <h1 className="gap text">SZOLGÁLTATÁS</h1>
@@ -100,7 +100,7 @@ function Services() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 export default Services;

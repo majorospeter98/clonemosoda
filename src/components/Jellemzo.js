@@ -1,6 +1,7 @@
 function Jellemzo() {
   return (
     <>
+    <section>
       <div className="container">
         <h1 className="gap text">JELLEMZŐINK</h1>
         <div id="jellemzok">
@@ -62,6 +63,7 @@ function Jellemzo() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

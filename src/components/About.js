@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="rolunk">
+    <section id="rolunk">
       <h1 className="gap text">Rólunk</h1>
       <div className="container">
         <div className="abouts">
@@ -49,7 +49,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default About;

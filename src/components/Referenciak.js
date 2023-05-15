@@ -1,7 +1,7 @@
 function Referenciak() {
   return (
     <>
-      <div id="referenciak">
+      <section id="referenciak">
         <div class="container">
           <h1 className="gap text">REFERENCIÁK</h1>
           <div class="refs">
@@ -142,7 +142,7 @@ function Referenciak() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

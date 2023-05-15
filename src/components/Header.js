@@ -6,6 +6,7 @@ function Header() {
   }
   return (
     <>
+    <header>
       <div id="header">
         <div className="container">
           <div className="header">
@@ -51,6 +52,7 @@ function Header() {
           </div>
         </div>
       </div>
+      </header>
     </>
   );
 }

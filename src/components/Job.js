@@ -1,10 +1,10 @@
 function Job(){
     return (
-<div id="job">
+<section id="job">
     <div class="jobintro">
         <button className="button"><a href="mailto:name@email.com">Jelentkezz</a></button>
     </div>
-</div>
+</section>
     )
 }
 export default Job

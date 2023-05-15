@@ -32,7 +32,7 @@ img {
   color: white;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 .text {
   font-size: 2.7rem;
@@ -175,6 +175,10 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+}
+.service p{
+  max-width:300px;
+  
 }
 .service {
   display: flex;
@@ -536,6 +540,7 @@ media query
   }
   .service {
     flex-direction: column;
+    align-items: center;
   }
   .grids {
     grid-template-columns: 1fr;

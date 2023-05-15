@@ -1,7 +1,7 @@
 function MunkaRuha() {
   return (
     <>
-      <div id="munkaruha">
+      <section id="munkaruha">
         <div class="munkaruhaintro">
           <div className="container">
             <h1 className="text gap pdtop">MUNKARUHA</h1>
@@ -38,7 +38,7 @@ function MunkaRuha() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
