@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clonemosoda/static/css/main.184b0b96.css",
-    "main.js": "/clonemosoda/static/js/main.56ca87b6.js",
+    "main.css": "/clonemosoda/static/css/main.07488aeb.css",
+    "main.js": "/clonemosoda/static/js/main.17ff04f5.js",
     "static/js/787.16a26186.chunk.js": "/clonemosoda/static/js/787.16a26186.chunk.js",
     "static/media/laundryelso.jpg": "/clonemosoda/static/media/laundryelso.b1b7254ce79f3d228232.jpg",
     "static/media/footer2.jpg": "/clonemosoda/static/media/footer2.ff67eeb268bd4fd68c9c.jpg",
@@ -24,12 +24,12 @@
     "static/media/ref6.png": "/clonemosoda/static/media/ref6.4cea6116032eb204cf1e.png",
     "static/media/logo.svg": "/clonemosoda/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/clonemosoda/index.html",
-    "main.184b0b96.css.map": "/clonemosoda/static/css/main.184b0b96.css.map",
-    "main.56ca87b6.js.map": "/clonemosoda/static/js/main.56ca87b6.js.map",
+    "main.07488aeb.css.map": "/clonemosoda/static/css/main.07488aeb.css.map",
+    "main.17ff04f5.js.map": "/clonemosoda/static/js/main.17ff04f5.js.map",
     "787.16a26186.chunk.js.map": "/clonemosoda/static/js/787.16a26186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.184b0b96.css",
-    "static/js/main.56ca87b6.js"
+    "static/css/main.07488aeb.css",
+    "static/js/main.17ff04f5.js"
   ]
 }
