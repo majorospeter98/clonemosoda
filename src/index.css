@@ -530,6 +530,8 @@ media query
   }
   .covid {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #jellemzok {
     flex-direction: column;
@@ -547,6 +549,9 @@ media query
     justify-content: center;
     align-items: center;
     justify-items: center;
+  }
+  form{
+    margin-top:2rem;
   }
   .munkaruhak,
   .iparikepek,
