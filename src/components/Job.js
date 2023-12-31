@@ -1,7 +1,7 @@
 function Job(){
     return (
 <section id="job">
-    <div class="jobintro">
+    <div className="jobintro">
         <button className="button"><a href="mailto:name@email.com">Jelentkezz</a></button>
     </div>
 </section>

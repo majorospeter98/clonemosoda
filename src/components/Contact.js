@@ -1,5 +1,6 @@
 function Contact() {
   return (
+    <>
     <section id="kapcsolat">
       <div className="flex gap">
         <iframe
@@ -13,6 +14,7 @@ function Contact() {
         ></iframe>
       </div>
     </section>
+    </>
   );
 }
 export default Contact;

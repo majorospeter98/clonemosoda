@@ -1,4 +1,5 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
+import React from 'react';
 function Price() {
   const [vnev, setVnev] = useState("");
   const [varosnev, setVarosnev] = useState("");
@@ -7,9 +8,8 @@ function Price() {
   const [telefon, setTelefon] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
-  const getIsFormValid = () => {
-    return vnev.length > 6 && knev.length > 6;
-  };
+  const [modal,setModal]= useState("");
+ 
   const clear = () => {
     setVnev("");
     setVarosnev("");
@@ -18,10 +18,14 @@ function Price() {
     setTelefon("");
     setEmail("");
     setText("");
+    setTimeout( () =>{
+      setModal("");
+    },5000)
   };
   function handleSubmit(e) {
     e.preventDefault();
-    alert("Elküldve");
+    setModal("Sikeresen elküldve!");
+      
     clear();
   }
   return (
@@ -36,10 +40,10 @@ function Price() {
             <p> Kollégánk néhány órán belül válaszolni fog.</p>
           </div>
           <div className="pricetext">
-            <form action="#" onSubmit={handleSubmit}>
+            <form action="#" onSubmit={handleSubmit} data-testid="form">
               <h3 className="gap text">Árajánlat:</h3>
                          <h3>Vállalkozás:</h3>
-                         <label for="vnev">Vállalkozás neve:</label>
+                         <label htmlFor="vnev">Vállalkozás neve:</label>
               <input
                 type="text"
                 value={vnev}
@@ -48,12 +52,13 @@ function Price() {
                   setVnev(e.target.value);
                 }}
                 placeholder="Vállalkozás neve"
+                data-testid="firstname"
                 required
               />
               <br />
-              <label for="varosnev">Város neve:</label>
+              <label htmlFor="varosnev">Város neve:</label>
               <input
-                type="text"
+                type="text" data-testid="city"
                 value={varosnev}
                 onChange={(e) => setVarosnev(e.target.value)}
                 id="varosnev"
@@ -61,7 +66,7 @@ function Price() {
                 required
               />
               <br />
-              <label for="mennyiség">Mennyiség:</label>
+              <label htmlFor="mennyiség">Mennyiség:</label>
               <input
                 type="number"
                 value={mennyiseg}
@@ -69,7 +74,7 @@ function Price() {
                 id="mennyiség"
                 placeholder="Havi mennyiség (kg)"
                 min="5"
-                max="50"
+                max="50" data-testid="amount"
                 required
               />
               <br />
@@ -80,17 +85,17 @@ function Price() {
                 value={knev}
                 id="knev"
                 onChange={(e) => setKnev(e.target.value)}
-                placeholder="Kapcsolattartó neve"
+                placeholder="Kapcsolattartó neve" data-testid="contact"
                 required
               />
               <br />
-              <label for="telefon">Telefonszámod:</label>
+              <label htmlFor="telefon">Telefonszámod:</label>
               <input
                 type="tel"
                 value={telefon}
                 id="telefon"
                 onChange={(e) => setTelefon(e.target.value)}
-                placeholder="Telefonszáma"
+                placeholder="Telefonszáma" data-testid="tel"
                 pattern = "((?:\+?3|0)6)(?:-|\()?(\d{1,2})(?:-|\))?(\d{3})-?(\d{3,4})"
                 required
               />
@@ -101,7 +106,7 @@ function Price() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email címe"
+                placeholder="Email címe" data-testid="email"
                 required
               />
               <br />
@@ -112,13 +117,14 @@ function Price() {
                 onChange={(e) => setText(e.target.value)}
                 name="w3review"
                 rows="6" 
-                 cols="50"
+                 cols="50" data-testid="comment"
                 placeholder="Üzenet"
               ></textarea>
+              <div className="modal" data-testid="modal">{modal}</div>
               <div className="pdtop pd">
                 <button
                   type="submit"
-                  className="button"
+                  className="button" 
                   
                 >
                   Submit

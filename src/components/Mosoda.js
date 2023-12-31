@@ -24,7 +24,7 @@ function Mosoda() {
               </p>
               <p>Ez a KORONA VÍRUS megsemmisítését is magában foglalja.</p>
             </div>
-            <div class="covidimg">
+            <div className="covidimg">
               <img src={require("../assets/mosoda.jpg")} alt="Mosoda kép" />
             </div>
           </div>

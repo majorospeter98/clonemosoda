@@ -383,6 +383,10 @@ li {
   gap: 2rem;
   justify-content: center;
 }
+.modal{
+  color:green;
+  font-size:1.4rem;
+}
 #arajanlat form {
   min-height: 45rem;
   display: flex;

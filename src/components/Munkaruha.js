@@ -2,7 +2,7 @@ function MunkaRuha() {
   return (
     <>
       <section id="munkaruha">
-        <div class="munkaruhaintro">
+        <div className="munkaruhaintro">
           <div className="container">
             <h1 className="text gap pdtop">MUNKARUHA</h1>
             <hr width="100%" size="1" color="white" />
@@ -24,8 +24,8 @@ function MunkaRuha() {
                 <a
                   href="https://www.nestle.hu/"
                   target="_blank"
-                  use
                   rel="noopener noreferrer"
+                 
                 >
                   <h2 style={{ color: "white" }}>NESTLÉ HUNGÁRIA KFT</h2>
                 </a>
