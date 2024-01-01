@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/clonemosoda/static/css/main.b8a0fc64.css",
-    "main.js": "/clonemosoda/static/js/main.17ff04f5.js",
-    "static/js/787.16a26186.chunk.js": "/clonemosoda/static/js/787.16a26186.chunk.js",
+    "main.css": "/clonemosoda/static/css/main.86f736c5.css",
+    "main.js": "/clonemosoda/static/js/main.413ac0f0.js",
+    "static/js/787.a6c2550b.chunk.js": "/clonemosoda/static/js/787.a6c2550b.chunk.js",
     "static/media/laundryelso.jpg": "/clonemosoda/static/media/laundryelso.b1b7254ce79f3d228232.jpg",
     "static/media/footer2.jpg": "/clonemosoda/static/media/footer2.ff67eeb268bd4fd68c9c.jpg",
     "static/media/towel2.jpg": "/clonemosoda/static/media/towel2.7a3335274350a5541e89.jpg",
@@ -14,7 +14,7 @@
     "static/media/ref8.png": "/clonemosoda/static/media/ref8.f878ef2f8fd8302e8f64.png",
     "static/media/munkaruha.jpg": "/clonemosoda/static/media/munkaruha.611ce08f2a34d8c8806c.jpg",
     "static/media/mosoda.jpg": "/clonemosoda/static/media/mosoda.9053b391cfd257a5cca3.jpg",
-    "static/media/tisztit.png": "/clonemosoda/static/media/tisztit.1a35e792e8ec3577e63e.png",
+    "static/media/tisztit.png": "/clonemosoda/static/media/tisztit.b7df382632a422a256df.png",
     "static/media/ref9.png": "/clonemosoda/static/media/ref9.174b311c2800f8533815.png",
     "static/media/nestle.jpg": "/clonemosoda/static/media/nestle.60cddd7aaa8bdfa91658.jpg",
     "static/media/ref5.png": "/clonemosoda/static/media/ref5.3fcc3a62eb49c031fbf4.png",
@@ -22,14 +22,13 @@
     "static/media/ref1.png": "/clonemosoda/static/media/ref1.b351cad101d0fbec9e35.png",
     "static/media/ref3.png": "/clonemosoda/static/media/ref3.5e84d760036221ca56a2.png",
     "static/media/ref6.png": "/clonemosoda/static/media/ref6.4cea6116032eb204cf1e.png",
-    "static/media/logo.svg": "/clonemosoda/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/clonemosoda/index.html",
-    "main.b8a0fc64.css.map": "/clonemosoda/static/css/main.b8a0fc64.css.map",
-    "main.17ff04f5.js.map": "/clonemosoda/static/js/main.17ff04f5.js.map",
-    "787.16a26186.chunk.js.map": "/clonemosoda/static/js/787.16a26186.chunk.js.map"
+    "main.86f736c5.css.map": "/clonemosoda/static/css/main.86f736c5.css.map",
+    "main.413ac0f0.js.map": "/clonemosoda/static/js/main.413ac0f0.js.map",
+    "787.a6c2550b.chunk.js.map": "/clonemosoda/static/js/787.a6c2550b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8a0fc64.css",
-    "static/js/main.17ff04f5.js"
+    "static/css/main.86f736c5.css",
+    "static/js/main.413ac0f0.js"
   ]
 }
