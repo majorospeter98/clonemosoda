@@ -1,10 +1,9 @@
 /**
 * @jest-environment jsdom
 */
-import { render,fireEvent } from "@testing-library/react";
+import { render,fireEvent} from "@testing-library/react";
 import React from "react";
 import Price from "./Price";
-import { click } from "@testing-library/user-event/dist/click";
 describe(Price, () => {
    it("Price check", () => {
    const {getByTestId} = render(<Price/>)
@@ -60,13 +59,20 @@ describe(Price, () => {
       fireEvent.change(comment, {target: {value:commentCheck}});
       expect(comment.value).toBe(commentCheck);
    })
-   it("submit button click", () =>{
-      const {getByRole,getByTestId} = render(<Price/>);
-      const submit=getByRole("button", {name: "Submit"});
-      const modal=getByTestId("modal");
-      expect(modal.value).toBe(undefined);
-      fireEvent.click(submit);
-      expect(modal.value).toBe("Sikeresen elküldve!");
-      
-   })
-   })
+   it("Form submit test", () =>{
+      let {queryByTestId} = render(<Price/>);
+      const form = queryByTestId("form");
+      const modal=queryByTestId("modal");
+      fireEvent.submit(form);
+      expect(modal.innerHTML).toBe("Sikeresen elküldve!");
+     })
+     it("submit button click", () =>{
+      let {queryByTestId} = render(<Price/>);
+      const firstName=queryByTestId("firstname")
+      const form = queryByTestId("form");
+      const modal=queryByTestId("modal");
+         fireEvent.submit(form);
+      expect(firstName.innerHTML).toBe("");
+     })
+       })
+     

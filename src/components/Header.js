@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 function Header() {
   const [button, setButton] = useState(true);
   function handleClick() {
@@ -13,7 +14,7 @@ function Header() {
             <div className="menulogo">
               <img src={require("../assets/menuimg.png")} alt="menu logo"></img>
             </div>
-            <div className={button ? "navbar" : ""}>
+            <div className={button ? "navbar" : ""} data-testid="navbar">
               <ul className="navbar">
                 <li>
                   <a href="#mosoda">Mosoda</a>
@@ -43,6 +44,7 @@ function Header() {
             </div>
             <a href="#">
               <img
+              data-testid="hamburger"
                 src={require("../assets/menu.png")}
                 className="menu"
                 alt="hamburger menu"

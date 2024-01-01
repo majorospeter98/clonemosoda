@@ -9,8 +9,7 @@ function Price() {
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
   const [modal,setModal]= useState("");
- 
-  const clear = () => {
+   const clear = () => {
     setVnev("");
     setVarosnev("");
     setMennyiseg("");
@@ -25,8 +24,7 @@ function Price() {
   function handleSubmit(e) {
     e.preventDefault();
     setModal("Sikeresen elküldve!");
-      
-    clear();
+   clear();
   }
   return (
     <section id="arajanlat">
@@ -125,8 +123,8 @@ function Price() {
                 <button
                   type="submit"
                   className="button" 
-                  
-                >
+                  name="Submit"
+                   >
                   Submit
                 </button>
               </div>
